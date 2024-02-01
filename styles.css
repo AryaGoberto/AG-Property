@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --primary: #1B6B93;
+}
+.navbar{
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary);
+    position: fixed;
+    width: 100%;
+    color: white;
+    font-size: 1.1rem;
+    align-items: center;
+    top: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.logo{
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+    gap: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.navbar-things{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10rem;
+}
+
+.navbar-items{
+    display: flex;
+    margin-right: auto;
+    gap: 30px;
+}
+
+.list-item{
+    list-style: none;
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+    
+}
+.daftar-masuk{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+.daftar-masuk .daftar{
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+    padding: 8px 18px;
+    border: 2px solid white;
+}
+
+.daftar-masuk .masuk{
+    background-color: white;
+    color: var(--primary);
+    font-weight: 700;
+    padding: 8px 18px;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease ;
+    background-color: white;
+}
+.p1{
+    color: black;
+    background-color: var(--primary);
+    z-index: 999;
+    padding: 30px 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.p1 img{
+    width: 43%;
+}
+.p1 .text{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    gap: 17px;
+}
+.p1 .text h1{
+    font-size: 2rem;
+}
+.p1 .text h1 .impian{
+    animation: typing 2s steps(20, end);
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+.p1 .text p{
+    text-align: justify;
+    width: 82%;
+    font-size: 1rem;
+}
+.temukan-rumah{
+    padding: 8px 18px;
+    text-align: center;
+    color: var(--primary);
+    background-color: white;
+    width:30%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease-out;
+}
+.temukan-rumah:hover{
+    color: white;
+    background-color: transparent;
+    border: 1.9px solid white;
+}
+.p2{
+    padding: 30px 60px;
+    width: 100%;
+}
+.p2 .title, .p2 .description{
+    text-align: center;
+}
+.p2 .title{
+    font-size: 1.7rem;
+}
+.p2 .description{
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.tipe-layanan{
+    display: flex;
+    justify-content: space-between;gap: 10px;
+    flex-wrap: wrap;
+}
+
+.layanan{
+    border: 2px solid var(--primary);
+    width: 400px;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    color: black;
+    transition: all .1s ease-in;
+}
+.layanan h1{
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-top: 8px;
+}
+.layanan p{
+    font-size: 1rem;
+    color: black;
+    margin-top: 8px;
+}
+
+.layanan button{
+    color: var(--primary);
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    padding: 10px 15px;
+    font-size: 1rem;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    font-weight: 700;
+    transition: all .1s ease-out;
+}
+/* Hover */
+.layanan:hover{
+    border: 1px solid black;
+    width: 400px;
+    padding: 15px;
+    text-align: center;
+    background-color: var(--primary);
+    color: black;
+}
+.layanan:hover h1{
+    font-size: 1.2rem;
+    color: white;
+}
+.layanan:hover p{
+    font-size: 1rem;
+    color: white;
+}
+
+.layanan:hover button{
+    margin-top: 10px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 10px 15px;
+    font-size: 1rem;
+    display: flex;
+    margin: auto;
+    margin-top: 8px;
+    font-weight: 700;
+}
+.layanan button:hover{
+    color: var(--primary);
+    background-color: white;
+}
+.p3{
+    padding: 30px 60px;
+    width: 100%;
+}
+
+.p3 #title, .p3 .description{
+    text-align: center;
+}
+.p3 #title{
+    font-size: 1.7rem;
+}
+.p3 .description{
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.p3 .semua-properti{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+/*  */
+.semua-properti .properti{
+    display: block;
+    border: 2px solid var(--primary);
+    padding: 15px;
+    background-color: white;
+    width: 300px;
+    color: black;
+}
+.properti .rumah{
+    width: 100%;
+}
+
+.properti .price{
+    font-size: 1.3rem;
+    font-weight: 550;
+    color: var(--primary);
+}
+.properti .alamat{
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    margin-top: 8px;
+}
+.properti .semua-spesifikasi{
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    color: black;
+}
+.semua-spesifikasi .spesifikasi {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    width: 180px;
+    gap: 10px;
+    color: black;
+}
+.properti button{
+    margin-top: 10px;
+    color: var(--primary);
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    padding: 10px 15px;
+    font-size: 1rem;
+    display: flex;
+    margin: auto;
+    margin-top: 8px;
+    font-weight: 700;
+}
+
+/* Hover */
+.semua-properti .properti:hover{
+    display: block;
+    padding: 15px;
+    background-color: var(--primary);
+    width: 300px;
+}
+.properti:hover .rumah{
+    width: 100%;
+}
+
+.properti:hover .price{
+    font-size: 1.3rem;
+    font-weight: 550;
+    color: white;
+}
+.properti:hover .alamat{
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    margin-top: 8px;
+}
+.properti:hover .semua-spesifikasi{
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+}
+.properti:hover .semua-spesifikasi .spesifikasi {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    width: 180px;
+    gap: 10px;
+    color: white;
+}
+.properti:hover button{
+    margin-top: 10px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 10px 15px;
+    font-size: 1rem;
+    display: flex;
+    margin: auto;
+    margin-top: 8px;
+    font-weight: 700;
+}
+
+.p3 .next{
+    color: var(--primary);
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    padding: 10px 15px;
+    font-size: 1rem;
+    display: flex;
+    margin-top: 8px;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    transition: all 0.3s ease ;
+
+}
+.p3 .next:hover{
+    color: white;
+    background-color: var(--primary);
+    border: 2px solid #fff;
+    padding: 10px 15px;
+    font-size: 1rem;
+    display: flex;
+    font-weight: 700;
+}
+
+
+.p4{
+    padding: 30px 60px;
+    width: 100%;
+    background-color: var(--primary);
+    color: white;
+}
+.p4 #title{
+    text-align: center;
+    font-size: 2rem;
+}
+.p4 .caption{
+    text-align: center;
+    font-size: 1rem;
+}
+.p4 .testimonial-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.testi{
+    border: 1px solid white;
+    padding: 15px;
+    width: 300px;
+    color: black;
+    background-color: white;
+}
+.testi .comment{
+    text-align: justify;
+}
+.testi .profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.testi .profile .profile-text{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.testi .profile .profile-text .name{
+    font-weight: 600;
+}
+.testi .photo{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%
+}
+.p5{
+    padding: 30px 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+}
+.p5 .text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 35%;
+}
+.text #title{
+    font-size: 2rem;
+}
+.kontak-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.kontak{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+.sosmed{
+    display: flex;
+    gap: 20px;
+}
+.ask-box{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 10px;
+    background-color: white;
+    padding: 15px;
+}
+
+.ask-box #title{
+    font-size: 2rem;
+    color: var(--primary);
+}
+.ask-box input{
+    padding: 15px;
+    font-size: 1.1rem;
+    border: 2px solid var(--primary);
+}
+.ask-box button{
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    border: 2px solid var(--primary);
+    background-color: var(--primary);
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease ;
+}
+.ask-box button:hover{
+    background-color: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+footer{
+    padding: 30px 60px;
+    width: 100%;
+    background-color: var(--primary);
+}
+
+footer .logo-sosmed{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+footer .type{
+    font-size: 1.1rem;
+}
+footer ul{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 15px;
+}
+footer li{
+    font-size: 0.8rem;
+}
+footer .copyright{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar{
+        width: 100%;
+        padding: 20px;        
+        top: 0;
+        left: 0;
+    }
+    .navbar-things{
+        display: none;
+    }
+    .navbar-things.active {
+        display: flex;
+        width: 100%;
+        left: 0;
+        position: absolute;
+    }
+    /*  */
+    .navbar-things{
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        background-color: var(--primary);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s ease-in;
+    }
+    .navbar-things.active{
+        left: 0;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        width: 100%;
+        gap: 2rem;
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .navbar-things.active .navbar-items{
+        display: flex;
+        margin: 0 auto;
+        gap: 30px;
+    }
+    .navbar-things.active .navbar-items{
+        flex-direction: column;
+    }
+    .navbar-things.active .daftar-masuk{
+        flex-direction: column;
+        gap: 30px;
+        margin: 0 auto;
+    }
+    .navbar-things.active .daftar-masuk .masuk{
+        width: 190%;
+    }
+    .navbar-things.active .daftar-masuk .daftar{
+        width: 190%;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .p1{
+        padding: 20px;
+        max-width: 100%;
+        flex-direction: column-reverse;
+    }
+    .p1 img{
+        width: 100%;
+        text-align: center;
+    }
+    .p1 .text h1{
+        font-size: 1.7rem;
+        margin-top: 15px;
+    }
+    .p1 .text p{
+        width: 100%;
+    }
+    .temukan-rumah{
+        width:100%;
+
+    }
+    .p2{
+        padding: 20px;
+        max-width: 100%;
+
+    }
+    .p3{
+        padding: 20px;
+        max-width: 100%;
+
+    }
+    .semua-properti .properti{
+        width: 100%;
+    }
+    .semua-properti .properti:hover{
+        width: 100%;
+    }
+    .p4{
+        padding: 20px;
+        max-width: 100%;
+
+    }
+    .testi{
+        width: 100%;
+    }
+    .p5{
+        padding: 20px;
+        border: 1px solid #000;
+        flex-direction: column;
+        width: 100%;
+    }
+    .p5 .text{
+        width: 100%;
+        gap: 10px;
+
+    } 
+    .ask-box{
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+    footer{
+        padding: 20px;
+        width: 100%;
+
+    }
+    footer .logo-sosmed{
+        margin: 0 auto
+    }
+    .footer-content{
+        flex-direction: column;
+        align-items: baseline;
+        gap: 20px;
+    }
+}
